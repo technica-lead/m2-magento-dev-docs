@@ -34,14 +34,10 @@ jobs:
                 with:
                     ref: main
                     path: main
-            -
-                name: Setup Pages
-                uses: actions/configure-pages@v2
-            -
-                name: Setup Ruby
-                uses: ruby/setup-ruby@v1
+
             -
                 name: Build with Jekyll
                 run: |
                     ls -l main/
-                    cp -r main/. .
+                    cp -r main/. ./
+                    ls -l ./
