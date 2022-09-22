@@ -1,5 +1,5 @@
 name: Upstream Sync
-description: Merge master branch of magento/devdocs into magento/devdocs branch
+# description: Merge master branch of magento/devdocs into magento/devdocs branch
 
 on:
     schedule:

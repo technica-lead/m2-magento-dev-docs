@@ -1,5 +1,5 @@
 name: Pages Deploy
-description: Deploy Magento Developer Documentation with GitHub Pages
+# description: Deploy Magento Developer Documentation with GitHub Pages
 
 on:
     push:
