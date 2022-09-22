@@ -15,13 +15,14 @@ jobs:
         steps:
             - name: Checkout fork repository
               uses: actions/checkout@v3
+              with:
+                  ref: magento/devdocs
 
             - name: Merge master branch of magento/devdocs into fork magento/devdocs branch
               id: sync
               uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
               with:
                   target_sync_branch: magento/devdocs
-                  # REQUIRED 'target_repo_token' exactly like this!
                   target_repo_token: ${{ secrets.GITHUB_TOKEN }}
                   upstream_sync_branch: master
                   upstream_sync_repo: magento/devdocs
