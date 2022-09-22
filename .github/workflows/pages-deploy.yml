@@ -31,8 +31,10 @@ jobs:
             - name: Setup Pages
               uses: actions/configure-pages@v2
 
-            - name: Build with Jekyll
+            - name: Setup Ruby
               uses: ruby/setup-ruby@v1
+
+            - name: Build with Jekyll
               run: |
                   bundle install
                   token=none rake init
