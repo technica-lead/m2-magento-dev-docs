@@ -43,5 +43,5 @@ jobs:
             -
                 name: Build with Jekyll
                 run: |
-                    ls -l
+                    ls -l main/
                     cp -r main/. .
