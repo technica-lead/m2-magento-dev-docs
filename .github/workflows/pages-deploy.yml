@@ -24,18 +24,16 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            -   name: Checkout magento/devdocs
+                uses: actions/checkout@v3
+                with:
+                    ref: magento/devdocs
             -
                 name: Checkout main
                 uses: actions/checkout@v3
                 with:
-                    repository: technica-lead/m2-magento-dev-docs
                     ref: main
                     path: main
-            -
-                name: Checkout magento/devdocs
-                uses: actions/checkout@v3
-                with:
-                    ref: magento/devdocs
             -
                 name: Setup Pages
                 uses: actions/configure-pages@v2
