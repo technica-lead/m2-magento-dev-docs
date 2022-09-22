@@ -1,1 +1,0 @@
-../../../v2.3/graphql/queries/checkout-agreements.md

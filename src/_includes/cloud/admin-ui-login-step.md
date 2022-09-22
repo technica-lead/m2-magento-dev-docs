@@ -1,1 +1,0 @@
-1. [Log in]({{ site.baseurl }}/cloud/onboarding/onboarding-tasks.html#admin) to the Admin UI.

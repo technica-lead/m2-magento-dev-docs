@@ -1,1 +1,0 @@
-../../../v2.3/graphql/mutations/redeem-giftcard-balance.md

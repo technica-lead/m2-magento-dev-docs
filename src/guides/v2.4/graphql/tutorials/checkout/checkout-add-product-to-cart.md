@@ -1,1 +1,0 @@
-../../../../v2.3/graphql/tutorials/checkout/checkout-add-product-to-cart.md

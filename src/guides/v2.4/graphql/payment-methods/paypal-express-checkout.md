@@ -1,1 +1,0 @@
-../../../v2.3/graphql/payment-methods/paypal-express-checkout.md

@@ -1,1 +1,0 @@
-../../../v2.3/graphql/mutations/create-braintree-client-token.md

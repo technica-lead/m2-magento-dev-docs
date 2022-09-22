@@ -1,1 +1,0 @@
-../../v2.3/advanced-reporting/data-collection.md

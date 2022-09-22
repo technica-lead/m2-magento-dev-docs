@@ -1,1 +1,0 @@
-Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices]({{ site.baseurl }}{{ site.gdeurl }}/performance-best-practices/configuration.html#indexers).
