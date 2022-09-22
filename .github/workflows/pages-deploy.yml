@@ -24,19 +24,25 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-              with:
-                  ref: magento/devdocs
-                  fetch-depth: 0
-
-            - name: Setup Pages
-              uses: actions/configure-pages@v2
-
-            - name: Setup Ruby
-              uses: ruby/setup-ruby@v1
-
-            - name: Build with Jekyll
-              run: |
-                  git archive main | gzip > main.tgz
-                  tar zxvf main.tgz
+            -
+                name: Checkout main
+                uses: actions/checkout@v3
+                with:
+                    repository: technica-lead/m2-magento-dev-docs
+                    ref: main
+                    path: main
+            -
+                name: Checkout magento/devdocs
+                uses: actions/checkout@v3
+                with:
+                    ref: magento/devdocs
+            -
+                name: Setup Pages
+                uses: actions/configure-pages@v2
+            -
+                name: Setup Ruby
+                uses: ruby/setup-ruby@v1
+            -
+                name: Build with Jekyll
+                run: |
+                    cp -r main/. .
