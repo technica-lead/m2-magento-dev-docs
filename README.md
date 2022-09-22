@@ -1,4 +1,4 @@
-# Developer Documentation of Magento Open Source
+# Magento Developer Documentation
 
 This repository contains workflows to synchronize the latest changes from upstream repository
 and build documentation site without migration notice and reading-disruptive styles.
