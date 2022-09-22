@@ -1,0 +1,17 @@
+# Set the site environment for the tag manager
+environment: m2dd
+
+collections:
+    videos:
+        output: false
+
+defaults:
+
+    -
+        scope:
+            path: ""
+        values:
+            # Enables the 'Edit this page on GitHub' appearances on pages
+            github_link: false
+            # Enables the 'Give us feedback' appearances on pages
+            feedback_link: false
