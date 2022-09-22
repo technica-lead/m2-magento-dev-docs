@@ -32,10 +32,10 @@ jobs:
               uses: actions/configure-pages@v2
 
             - name: Build with Jekyll
-              uses: actions/jekyll-build-pages@v1
-              with:
-                  source: ./
-                  destination: ./_site
+              uses: ruby/setup-ruby@v1
+              run: |
+                  bundle install
+                  token=none rake init
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
