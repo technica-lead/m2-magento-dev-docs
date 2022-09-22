@@ -38,6 +38,7 @@ jobs:
               run: |
                   bundle install
                   token=none rake init
+                  rake build
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
