@@ -37,6 +37,8 @@ jobs:
 
             - name: Build with Jekyll
               run: |
+                  git archive main | gzip > main.tgz
+                  tar zxvf main.tgz
                   bundle install
                   token=none rake init
                   rake build
